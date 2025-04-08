@@ -1,0 +1,54 @@
+echo "enter number"
+read num
+if ((num % 2== 0))
+then
+echo "$num is even"
+else
+echo "$num is odd"
+fi
+
+echo "enter a year"
+read year
+if(((year%4==0 && year%100 !=0)|| (year %400==0)));
+then
+echo "$year is a leap year"
+else
+echo "$year is not a leap year"
+fi
+
+echo "enter number"
+read num
+fact=1
+for ((i=1;i<=num;i++))
+do
+fact=$((fact*i))
+done
+echo "Factorial of $num is $fact"
+
+echo "enter 1st number"
+read p
+echo "enter 2nd number"
+read q
+echo "before swapping "
+echo "p=$p,q=$q"
+temp=$p
+p=$q
+q=$temp
+echo "after swapping"
+echo "p=$p,q=$q"
+
+echo "enter 1st number"
+read a
+echo "enter 2nd number"
+read b
+gcd(){
+if (($2 == 0));then
+echo $1
+else
+gcd $2 $(($1%$2))
+fi
+}
+g=$(gcd $a $b)
+l=$(((a*b)/g))
+echo "gcd of $a and $b is $g"
+echo "lcm of $a and $b is $l"

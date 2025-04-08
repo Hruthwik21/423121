@@ -1,0 +1,5 @@
+git config --global user.name "expert"
+git config --global user.email "expert@example.com"
+git config --list
+git init
+git status

@@ -1,0 +1,5 @@
+gcc -q myprogram.c
+gdb a.out
+gdb l a.out
+l
+l[2]

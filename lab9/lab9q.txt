@@ -1,0 +1,5 @@
+dpkg -l
+rpm -qa
+apt -cache search htop
+sudo apt install gdebi -y
+ls htop

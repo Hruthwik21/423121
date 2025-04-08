@@ -1,0 +1,5 @@
+tar -czf sa.tar lab6
+tar -cvf sa1.tar lab4
+tar -v sa1.tar
+tar -tv sa1.tar
+tar -tvf sa1.tar
